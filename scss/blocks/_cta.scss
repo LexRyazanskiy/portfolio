@@ -1,0 +1,27 @@
+.cta {
+    padding: 60px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 25px;
+
+    @include mobile {
+        padding: 40px 0;
+
+        row-gap: 20px;
+    }
+
+    background-color: #F0F5F9;
+    border-radius: 10px;
+}
+
+.cta__desc {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1;
+    
+    p + p {
+        margin-top: 1em;
+    }
+}

@@ -1,0 +1,20 @@
+.slider {
+    img {
+        border-radius: 8px;
+        object-fit: cover;/* Если будем менять ширину и высоту
+        картинок, чтобы их пропорции сохранялись*/
+
+        max-width: unset !important;
+        height: unset !important;
+        height: 400px !important;
+        
+        @include mobile {
+            height: 250px !important;
+        }
+    }
+
+}
+
+.slider > div:first-child {
+    padding-left: 15px;
+}

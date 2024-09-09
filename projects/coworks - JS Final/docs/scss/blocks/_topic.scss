@@ -1,0 +1,91 @@
+.topic {
+    padding: 30px 0;
+    border-top: 1px solid #ECECF1;
+    border-bottom: 1px solid #ECECF1;
+
+    @include tablet {
+        padding: 17px 0;
+    }
+
+    @include mobile {
+        padding: 15px 0;
+    }
+}
+
+.topic + .topic {
+    margin-top: -1px;
+}
+
+.topic__btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+    align-items: center;
+
+    /* Hover */
+    &:hover:not(:focus-visible) {/* Чтобы он работал для hover эффекта, а не на focus-visible */
+        opacity: 0.5;
+    }
+
+    /* Active */
+    &:active:not(:focus-visible) .topic__title {/* Когда элемент будет активным, но
+        не затрагивался focus-visible */
+        color: #00ae6c;
+    }
+
+    /* Focus reset */
+    &:focus {
+        outline: none;
+    }
+
+    /* Focus only */
+    &:focus-visible {
+        outline-offset: 1px;
+        outline: #005fcc auto 1px;
+    }
+}
+
+.topic__icon {
+    @include mobile {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+.topic__title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1;
+    color: #000;
+
+    @include mobile {
+        font-size: 18px;
+    }
+}
+
+.topic__content {
+    line-height: 1.5;
+
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.4s ease-in;
+
+    @include mobile {
+        padding-top: 13px;
+        font-size: 14px;
+    }
+}
+
+.topic__content-padding {
+    padding-top: 30px;
+
+    p + p {
+        margin-top: 1em;
+    }
+}
+
+/* Variant 1 */
+/* .topic--open .topic__content {
+    display: flex;
+} */

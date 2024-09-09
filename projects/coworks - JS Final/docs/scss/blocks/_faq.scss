@@ -1,0 +1,32 @@
+.faq {
+}
+
+.faq__wrapper {
+    display: flex;
+    gap: 40px 30px;
+    justify-content: space-between;  
+
+    @include tablet {
+        flex-direction: column;
+    }
+
+    @include mobile {
+        row-gap: 20px;
+    }
+}
+.faq__title {
+    width: 470px;
+    flex-shrink: 0;//чтобы заголовок не сжимался из-за аккордеона
+
+    @include tablet {
+        width: auto ;
+    }
+}
+.faq__topics {
+    width: 670px;
+    flex-shrink: 0;
+
+    @include tablet {
+        width: auto;
+    }
+}

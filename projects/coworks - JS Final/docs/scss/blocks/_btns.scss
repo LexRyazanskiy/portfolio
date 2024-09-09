@@ -1,0 +1,108 @@
+.btn-dark, a.btn-dark {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 80px;
+    background-color: #000;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+
+    transition: background-color 0.2s ease-in;
+
+    &:hover {
+        background-color: #333;
+    }
+
+    &--wide {
+        width: 100%;
+        
+    }
+}
+
+.btn-green, a.btn-green {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 80px;
+    background-color: #00AE6C;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+
+    transition: background-color 0.2s ease-in;
+
+    &:hover {
+        background-color: #00d785;
+    }
+}
+
+.btn-outline, a.btn-outline {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 80px;
+    border: 1px solid #fff;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+
+    transition: background-color 0.2s ease-in, color 0.2s ease-in;
+
+    &:hover {
+        color: #000;
+        background-color: #fff;
+    }
+}
+
+.btn-price, a.btn-price {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 80px;
+    border: 1px solid #000000;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000000;
+
+    transition: background-color 0.2s ease-in, color 0.2s ease-in;
+
+    &:hover {
+        color: #ffffff;
+        background-color: #000000;
+    }
+}
+
+.btn-tg, a.btn-tg {
+    display: inline-flex;//поведение инлайна, т.е. размер по контенту, но внутри содержание имеет свойство флексбокса
+    column-gap: 10px;
+
+
+    padding: 10px 20px;
+    border-radius: 80px;
+    background-color: #039be5;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+
+    transition: background-color 0.2s ease-in;
+
+    &:hover {
+        background-color: #006da3;
+    }
+}
+.btn-whatsapp, a.btn-whatsapp {
+    display: inline-flex;//поведение инлайна, т.е. размер по контенту, но внутри содержание имеет свойство флексбокса
+    column-gap: 10px;
+
+
+    padding: 10px 20px;
+    border-radius: 80px;
+    background-color: #00ae6c;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+
+    transition: background-color 0.2s ease-in;
+
+    &:hover {
+        background-color: #007e4e;
+    }
+}

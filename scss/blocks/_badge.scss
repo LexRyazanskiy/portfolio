@@ -1,0 +1,43 @@
+.badge {
+    padding: 3.5px 6px;
+    height: 19px;
+
+    border-radius: 2px;
+    background-color: #414141;
+
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1;
+    color: #fff;
+
+    &--html {
+        background-color: #414141;
+    }
+    &--css {
+        background-color: #39A0FF;
+    }
+    &--scss {
+        background-color: #DD6ADF;
+    }
+    &--gulp {
+        background-color: #EC473C;
+    }
+    &--js {
+        background-color: #FFCE20;
+        color: #000;
+    }
+    &--react {
+        background-color: #33D6F0;
+    }
+    &--node {
+        background-color: #67CF00;
+    }
+    &--php {
+        background-color: #B07FED;
+    }
+    &--wordpress {
+        background-color: #0F8CC6;
+    }
+
+}

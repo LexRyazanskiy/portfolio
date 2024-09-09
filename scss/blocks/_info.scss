@@ -1,0 +1,13 @@
+.info {
+    display: flex;
+    column-gap: 30px;
+
+    @include mobile {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+}
+
+.info__about, .info__skills {
+    flex: 1;
+}

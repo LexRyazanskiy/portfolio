@@ -1,0 +1,45 @@
+.logo {
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+	row-gap: 5px;
+
+	max-width: 100%;
+
+	transition: all 0.2s ease-in;
+
+	&:hover {
+		opacity: 0.7;
+	}
+
+	&:active {
+		top: 1px;
+	}
+}
+
+.logo__title {
+/* 	position: relative; */
+
+	font-weight: 800;
+	font-size: 32px;
+	line-height: 1;
+	color: #000;
+
+/* 	transition: all 0.2s ease-in;
+
+	&:hover {
+		opacity: 0.7;
+	}
+
+	&:active {
+		top: 1px;
+	} */
+}
+
+.logo__desc {
+/* 	position: relative; */
+	font-size: 14px;
+	line-height: 1.6;
+	color: #6b9db9;
+}
